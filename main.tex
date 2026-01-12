@@ -1,0 +1,71 @@
+\documentclass{replab}
+\usepackage{lipsum}
+\usepackage{float,physics,setspace,caption}
+\usepackage{placeins}
+\captionsetup[table]{position=bottom}
+
+\onehalfspacing
+
+% --- Informaci\'on del documento ---
+\title{Pr\'actica #PRACTICA}
+
+% Nota: Si se desea incluir m\'as de un autor en el documento, el archivo replab.cls, en la secci\'on "P\'agina de t\'itulo de documento", contiene l\'ineas de c\'odigo comentadas pensadas para introducir los datos desde 1 hasta 4 autores. Sin embargo, debe escogerse solo una de las cuatro secciones de c\'odigo y comentar las dem\'as para mantener la consistencia del documento.
+
+\date{FECHA ENTREGA}
+\subtitle={NOMBRE PRÁCTICA}
+\subject={Laboratorio de Óptica}
+
+\setlength{\columnsep}{14pt}
+
+% --- Archivo de bibliograf\'ia ---
+\addbibresource{repbib.bib}
+
+% --- Inicio del documento ---
+\begin{document}
+	
+	\pagestyle{fancy}
+	
+% --- T\'itulo ---
+		\begin{center}
+			\maketitle
+			
+			{\begin{tcolorbox}[colframe=white, colback=principaldos, arc=8pt]
+				\begin{onecolabstract}
+                    \vspace{-0.5cm}					
+					\medskip
+                    
+                    \noindent\textit{Palabras clave: }
+				\end{onecolabstract}
+
+				\tcblower
+
+				\selectlanguage{english}
+				\begin{onecolabstract}
+                    \vspace{-0.5cm}						
+					\medskip
+                    
+					\noindent\textit{Keywords: }
+				\end{onecolabstract}
+			\end{tcolorbox}}
+
+			\smallskip
+		\end{center}
+
+	\saythanks
+
+	\selectlanguage{spanish}
+	
+% --- Cuerpo del reporte ---
+	
+	\section{Introducci\'on}       
+        
+    \section{Metodología Experimental}
+
+    \section{Resultados y Discusión}
+        
+	\section{Conclusiones}
+        
+\printbibliography[heading=bibintoc]
+
+		
+\end{document}
